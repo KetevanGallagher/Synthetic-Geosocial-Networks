@@ -1,12 +1,9 @@
 import random
 import numpy as np
-import pandas as pd
-import scipy as sp
 from scipy import sparse
 from scipy.sparse import csr_matrix, rand, triu
 import time
 import networkx as nx
-import math
 import matplotlib.pyplot as plt
 import statistics
 k = 10
@@ -77,7 +74,7 @@ maximumDegree = []
 count = 1
 
 for i in range(count):
-    print("on iteration number " + str(i))
+    print("Iteration " + str(i))
     fm = generate_wsfriend_matrix()
     end_time = time.time()
     print("it took " + str(round(end_time-start_time)) + " seconds to run")
